@@ -4,25 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Scores</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="main.css" />
+		<title>Simon</title>
 	</head>
-	<body>
-		<nav>
-			<h1>Simon</h1>
-			<menu>
+	<body class="flex flex-col justify-between w-100 h-screen text-neutral-300">
+		<nav class="flex items-end p-3 bg-neutral-800">
+			<h1 class="px-5 text-3xl">Simon<sup>&reg;</sup></h1>
+			<menu class="flex gap-5 text-neutral-400">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="play.html">Play</a></li>
-				<li><a href="scores.html">Scores</a></li>
+				<li class="text-neutral-300"><a href="scores.html">Scores</a></li>
 				<li><a href="about.html">About</a></li>
 			</menu>
 		</nav>
-
-		<br />
-		<hr />
-		<br />
-
-		<main>
-			<table>
+		<main
+			class="bg-neutral-600 h-full w-100 p-5 flex justify-center items-center">
+			<table class="w-5/6 text-center">
 				<th>#</th>
 				<th>Name</th>
 				<th>Score</th>
@@ -48,13 +46,8 @@
 				</tr>
 			</table>
 		</main>
-
-		<br />
-		<hr />
-		<br />
-
-		<footer>
-			<p>Author's Name</p>
+		<footer class="flex justify-evenly p-3 bg-neutral-800">
+			<p>Nathan Carter</p>
 			<a href="https://github.com/nathandcarter21/simon">Github</a>
 		</footer>
 	</body>
