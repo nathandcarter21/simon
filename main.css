@@ -2,3 +2,73 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+.board {
+    width: 60vw;
+    height: 60vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: min(60vmin, 1000px);
+    max-height: min(60vmin, 1000px);
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+}
+
+.green {
+    background-color: green;
+    width: 80%;
+    height: 80%;
+    border-radius: 100% 0 0 0;
+    margin-left: 7.5%;
+    margin-top: 7.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    border: 5px solid rgb(131, 122, 109);
+}
+
+.red {
+    background-color: red;
+    width: 80%;
+    height: 80%;
+    border-radius: 0 100% 0 0;
+    margin-right: 7.5%;
+    margin-top: 7.5%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    border: 5px solid rgb(131, 122, 109);
+}
+
+.blue {
+    background-color: blue;
+    width: 80%;
+    height: 80%;
+    border-radius: 0 0 100% 0;
+    margin-right: 7.5%;
+    margin-bottom: 7.5%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    border: 5px solid rgb(56, 32, 191);
+}
+
+.yellow {
+    background-color: yellow;
+    width: 80%;
+    height: 80%;
+    border-radius: 0 0 0 100%;
+    margin-left: 7.5%;
+    margin-bottom: 7.5%;
+    margin-right: 2.5%;
+    margin-top: 2.5%;
+    border: 5px solid rgb(190, 181, 24);
+}
+
+.inner {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
