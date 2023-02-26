@@ -19,27 +19,41 @@
 			</menu>
 		</nav>
 		<main class="bg-neutral-600 h-full w-100 p-5">
-			<h1 class="text-xl">Player: -------</h1>
+			<h1 class="text-xl">Player:<span class="player-name"></span></h1>
 			<div class="flex justify-center items-center h-full m-5">
 				<div class="board bg-neutral-800">
 					<div class="top w-full h-1/2 flex">
-						<button class="green"></button>
-						<button class="red"></button>
+						<button
+							class="green gameButton"
+							id="green"
+							onclick="game.pressButton(this)"></button>
+						<button
+							class="red gameButton"
+							id="red"
+							onclick="game.pressButton(this)"></button>
 					</div>
 					<div
 						class="inner bg-neutral-800 flex flex-col justify-center items-center gap-2 text-center">
 						<h3 class="text-xl">Simon</h3>
 						<div
 							class="score border-2 border-red-600 rounded-lg px-2 text-red-600">
-							- -
+							<span id="score"></span>
 						</div>
-						<button class="rounded-md p-1 bg-blue-600 text-neutral-800">
+						<button
+							class="rounded-md p-1 bg-blue-600 text-neutral-800"
+							onClick="game.reset()">
 							Reset
 						</button>
 					</div>
 					<div class="btm w-full h-1/2 flex">
-						<button class="yellow"></button>
-						<button class="blue"></button>
+						<button
+							class="yellow gameButton"
+							id="yellow"
+							onclick="game.pressButton(this)"></button>
+						<button
+							class="blue gameButton"
+							id="blue"
+							onclick="game.pressButton(this)"></button>
 					</div>
 				</div>
 			</div>
@@ -49,4 +63,5 @@
 			<a href="https://github.com/nathandcarter21/simon">Github</a>
 		</footer>
 	</body>
+	<script src="app.js"></script>
 </html>
