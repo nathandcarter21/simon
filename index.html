@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" href="main.css" />
+		<script src="login.js"></script>
 		<title>Simon</title>
 	</head>
 	<body class="flex flex-col justify-between w-100 h-screen text-neutral-300">
@@ -22,18 +23,18 @@
 			class="bg-neutral-600 h-full flex flex-col justify-center items-center gap-5 p-3 text-center">
 			<h1 class="text-3xl">Welcome to Nathan's CS260 Simon</h1>
 			<h5>Login to play</h5>
-			<form action="">
-				<input
-					class="rounded-md p-1 border-none text-neutral-800 focus:outline-0"
-					type="text"
-					name="name"
-					id="name"
-					placeholder="Name"
-					required />
-				<button class="rounded-md p-1 bg-sky-500 text-neutral-800">
-					Log in
-				</button>
-			</form>
+			<input
+				class="rounded-md p-1 border-none text-neutral-800 focus:outline-0"
+				type="text"
+				name="name"
+				id="name"
+				placeholder="Name"
+				required />
+			<button
+				class="rounded-md p-1 bg-sky-500 text-neutral-800"
+				onclick="login()">
+				Log in
+			</button>
 		</main>
 		<footer class="flex justify-evenly p-3 bg-neutral-800">
 			<p>Nathan Carter</p>
