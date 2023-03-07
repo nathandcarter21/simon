@@ -1,4 +1,6 @@
-require('dotenv').config()
+// let env = process.env.NODE_ENV || 'development';
+// if (env === 'development')
+//     require('dotenv').config()
 const { MongoClient } = require('mongodb');
 
 const userName = process.env.MONGOUSER;
